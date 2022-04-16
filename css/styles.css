@@ -9,6 +9,17 @@
     --button-background-hover: #188ce8;
     --typical-margin: 94px;
 }
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -34,8 +45,14 @@ ol {
     padding-left: 0;
 }
 
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 .link {
     text-decoration: none;
@@ -56,6 +73,7 @@ ol {
     padding-top: 24px;
     padding-bottom: 25px;
     outline: 2px dashed #36f495;
+    border-bottom: 1px solid #ececec;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -100,9 +118,9 @@ ol {
     background-color: var(--hero-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    /* padding-left: 452px; */
-    /* padding-right: 452px; */
-    margin: 0 auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: var(--typical-margin);
     outline: 2px dashed #f44336;
 }
@@ -114,9 +132,13 @@ ol {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-title-color);
-    max-width: 696px;
+    /* max-width: 696px; */
+    margin-bottom: 30px;
+    padding-right: 235px;
+    padding-left: 235px;
 }
 .hero-btn {
+    display: inline-block;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -125,6 +147,9 @@ ol {
     cursor: pointer;
     color: var(--hero-title-color);
     background-color: var(--logo-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -132,7 +157,8 @@ ol {
 }
 
 .about {
-    /* padding: 0 215px 94px 215px; */
+    padding-top: 0;
+    padding-bottom: 0;
     margin-top: 0;
     margin-left: 215px;
     margin-right: 215px;
@@ -168,8 +194,12 @@ ol {
     color: var(--secondary-color);
 }
 .gallery {
+    padding-top: 0;
+    padding-bottom: 0;
     margin-bottom: var(--typical-margin);
     outline: 2px dashed #f44336;
+    margin-left: 215px;
+    margin-right: 215px;
 }
 .gallery-title {
     color: var(--main-color);
@@ -177,6 +207,8 @@ ol {
 }
 .team {
     outline: 2px dashed #6936f4;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team-title-main {
     color: var(--main-color);
@@ -189,7 +221,6 @@ ol {
     text-align: center;
     color: var(--main-color);
     max-width: 270px;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .team-text {
@@ -199,13 +230,25 @@ ol {
     color: var(--secondary-color);
     margin-bottom: 30px;
 }
+.team-img {
+    margin-bottom: 30px;
+}
+
+/* ----------------FOOTER----------------- */
+
 .footer {
     background-color: var(--hero-background-color);
     outline: 2px dashed #36f465;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer {
     color: var(--hero-title-color);
 }
+.address {
+    margin-top: 30px;
+}
+
 .footer-link {
     font-style: normal;
     font-size: 14px;
@@ -216,21 +259,27 @@ ol {
     font-size: 14px;
     line-height: 1.71;
     color: var(--footer-item-color);
+    margin-bottom: 9px;
 }
 .footer-link:hover,
 .footer-link:focus {
     color: var(--logo-color);
 }
 .portfolio-btn {
+    display: inline-block;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     cursor: pointer;
     color: var(--main-color);
-    background-color: var(--hero-title-color);
+    background-color: var(--button-background-color);
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
 }
 .portfolio-button {
+    display: inline-block;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -238,6 +287,9 @@ ol {
     cursor: pointer;
     color: var(--hero-title-color);
     background-color: var(--logo-color);
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -266,4 +318,5 @@ ol {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    /* text-align: center; */
 }
