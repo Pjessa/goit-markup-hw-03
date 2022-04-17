@@ -26,6 +26,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--main-color);
+    margin: 0;
 }
 
 p,
@@ -139,6 +140,8 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -256,7 +259,9 @@ img {
     color: var(--main-color);
     max-width: 270px;
     background-color: #ffffff;
-    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:not(:last-child) {
@@ -270,13 +275,13 @@ img {
     line-height: 1.19;
     text-align: center;
     color: var(--secondary-color);
-    margin-bottom: 30px;
-}
-.team-img {
-    margin-bottom: 30px;
 }
 .team-list {
     display: flex;
+}
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .footer {
@@ -355,6 +360,7 @@ img {
     background-color: var(--logo-color);
 }
 .about-work {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .works-title {
@@ -383,13 +389,10 @@ img {
     background: #ffffff;
     border: 1px solid #eeeeee;
 }
-.works-img {
-    margin-bottom: 20px;
-}
 .current {
     color: var(--logo-color);
 }
-.card {
+.card-content {
     border-width: 1px;
-    padding: 0px 24px 20px 24px;
+    padding: 20px 24px 20px 24px;
 }
